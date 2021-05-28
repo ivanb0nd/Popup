@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Modal window</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="container">
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Practice</h1>
+          <a href="#popup-2" class="popup-link">Popup 2</a>
+          <button class="popup-btn" data-popup-btn-id="popup">Popup 1</button>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="section">
+          <div class="content">
+            <div class="content__text">
+              <h2 class="content__title">Title 1</h2>
+              <p class="paragraph" style='--i:1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur odio tempora qui temporibus
+                quod,
+                et deserunt at quam accusantium fugiat recusandae rem nemo culpa reprehenderit excepturi eligendi! Harum
+                optio distinctio at beatae expedita fugit repellendus nihil consequuntur. Veritatis quos fugit
+                doloremque
+                suscipit, fuga eaque iusto error praesentium unde quam.</p>
+              <p class="paragraph" style='--i:2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur odio tempora qui temporibus
+                quod,
+                et deserunt at quam accusantium fugiat recusandae rem nemo culpa reprehenderit excepturi eligendi! Harum
+                optio distinctio at beatae expedita fugit repellendus nihil consequuntur. Veritatis quos fugit
+                doloremque
+                suscipit, fuga eaque iusto error praesentium unde quam.</p>
+              <p class="paragraph" style='--i:3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur odio tempora qui temporibus
+                quod,
+                et deserunt at quam accusantium fugiat recusandae rem nemo culpa reprehenderit excepturi eligendi! Harum
+                optio distinctio at beatae expedita fugit repellendus nihil consequuntur. Veritatis quos fugit
+                doloremque
+                suscipit, fuga eaque iusto error praesentium unde quam.</p>
+              <p class="paragraph" style='--i:4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur odio tempora qui temporibus
+                quod,
+                et deserunt at quam accusantium fugiat recusandae rem nemo culpa reprehenderit excepturi eligendi! Harum
+                optio distinctio at beatae expedita fugit repellendus nihil consequuntur. Veritatis quos fugit
+                doloremque
+                suscipit, fuga eaque iusto error praesentium unde quam.</p>
+              <p class="paragraph" style='--i:5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur odio tempora qui temporibus
+                quod,
+                et deserunt at quam accusantium fugiat.</p>
+            </div>
+            <a href="#image" class="content__image popup-link">
+              <img src="https://i.pinimg.com/564x/5b/8b/f0/5b8bf007b123f896302d3fe17636d76c.jpg" alt="">
+            </a>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="content__text">
+            <h2 class="content__title">Title 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia itaque molestiae, ex tempore
+              inventore voluptate est praesentium eveniet alias, vero iste distinctio perferendis neque!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia itaque molestiae, ex tempore
+              inventore voluptate est praesentium eveniet alias, vero iste distinctio perferendis neque!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia itaque molestiae, ex tempore
+              inventore voluptate est praesentium eveniet alias, vero iste distinctio perferendis neque!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia itaque molestiae, ex tempore
+              inventore voluptate est praesentium eveniet alias, vero iste distinctio perferendis neque!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia itaque molestiae, ex tempore
+              inventore voluptate est praesentium eveniet alias, vero iste distinctio perferendis neque!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia itaque molestiae, ex tempore
+              inventore voluptate est praesentium eveniet alias, vero iste distinctio perferendis neque!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia itaque molestiae, ex tempore
+              inventore voluptate est praesentium eveniet alias, vero iste distinctio perferendis neque!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia itaque molestiae, ex tempore
+              inventore voluptate est praesentium eveniet alias, vero iste distinctio perferendis neque!</p>
+
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a class="popup__close close-popup">&times;</a>
+          <div class="popup__header">
+            <div class="popup__title">Popup 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sitff quam
+              dignissimos vitae error! Ullam cupiditate suscipit inventore saepe. Voluptatibus, cupiditate.</div>
+          </div>
+          <div class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut doloribus. Ex atque
+            iste fuga velit dolorem quisquam voluptatem! Mollitia.
+            <a href="#popup-2" class="popup-link">Popup 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-2" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a class="popup__close close-popup">&times;</a>
+          <div class="popup__header">
+            <div class="popup__title">Popup 2</div>
+          </div>
+          <div class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut doloribus. Ex atque
+            iste fuga velit dolorem quisquam voluptatem! Mollitia.pisicing elit. Ut, aut doloribus. Ex atque iste fuga
+            velit dolorem quisquam voluptatem! Mollitia.pisicing elit. Ut, aut doloribus. Ex atque iste fuga velit
+            dolorem quisquam voluptatem! Mollitia.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="image" class="popup">
+      <div class="popup__body">
+        <div class="popup__content popup__content-image">
+          <a class="popup__close close-popup">&times;</a>
+          <div class="popup__image">
+            <img src="https://i.pinimg.com/564x/5b/8b/f0/5b8bf007b123f896302d3fe17636d76c.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="js.js"></script>
+</body>
+
+</html>
